@@ -1,0 +1,358 @@
+/*  res */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* badan */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #fca119;
+}
+
+
+/* kepala */
+
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding: 25px 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header p {
+    margin: 8px 0 0;
+    font-size: 15px;
+    color: #d1d5db;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* tahan */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.container h2 {
+    margin: 0 0 5px;
+    font-size: 25px;
+    color: #1b2128;
+}
+
+.container h3 {
+    margin-top: 25px;
+    color: #374151;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* editnya tabel */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #586270;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e4e5e5;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+
+.status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tersedia {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.digunakan {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.perawatan {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+
+/*  tombolnya */
+
+.btn-edit {
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-edit:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* hapus */
+
+.btn-delete {
+    border: none;
+    background-color: #dc2626;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.btn-delete:hover {
+    background-color: #b91c1c;
+}
+
+
+/* formul */
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+
+/* grup */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* form lagi tapi tombol */
+
+.button-container {
+    margin-top: 25px;
+}
+
+.btn-save {
+    border: none;
+    background-color: #16a34a;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-save:hover {
+    background-color: #15803d;
+}
+
+.btn-reset {
+    border: none;
+    background-color: #6b7280;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-reset:hover {
+    background-color: #4b5563;
+}
+
+
+/* popup editan */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.popup-content {
+    width: 350px;
+    max-width: 90%;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    background-color: #16a34a;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup-content h3 {
+    margin: 10px 0;
+
+    color: #1f2937;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+
+    color: #666;
+}
+
+.popup-content button {
+    border: none;
+
+    background-color: #16a34a;
+    color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.popup-content button:hover {
+    background-color: #15803d;
+}
+
+
+/* responsif */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+}
